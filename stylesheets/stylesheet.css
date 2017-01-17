@@ -29,6 +29,11 @@ li {
   line-height: 1.4 ;
 }
 
+li.active a{
+    color: #b5e853;
+    text-decoration: none;
+}
+
 /* Header, <header>
    header   - container
    h1       - project name
@@ -133,16 +138,25 @@ ul li {
   list-style: none;
 }
 
-ul li:before {
+ul li.active:before {
   content: ">>";
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 13px;
   color: #b5e853;
-  margin-left: -37px;
+  /*margin-left: -37px;*/
   margin-right: 21px;
   line-height: 16px;
 }
 
+ul li:before {
+  content: "";
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-size: 13px;
+  color: #b5e853;
+  /*margin-left: -37px;*/
+  margin-right: 36.5px;
+  line-height: 16px;
+}
 blockquote {
   color: #aaa;
   padding-left: 10px;
